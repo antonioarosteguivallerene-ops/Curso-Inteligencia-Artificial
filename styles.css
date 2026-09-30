@@ -243,3 +243,17 @@ td.no { background: #fde4e1; font-weight: 700; color: #a3261b; }
   html { scroll-behavior: auto; }
   .chip { transition: none; }
 }
+
+/* Figuras y esquemas */
+.fig { margin: 1.1rem 0; }
+.fig svg { display: block; width: 100%; max-width: 640px; height: auto; }
+.fig figcaption { font-size: 0.9rem; color: var(--muted); margin-top: 0.4rem; }
+.fig .b { fill: var(--soft); stroke: var(--accent); stroke-width: 1.5; }
+.fig .b2 { fill: var(--surface); stroke: var(--line); stroke-width: 1.5; }
+.fig .t { font: 700 14px var(--head); fill: var(--ink); text-anchor: middle; }
+.fig .s { font: 13px var(--text); fill: var(--muted); text-anchor: middle; }
+.fig .l { stroke: var(--muted); stroke-width: 1.6; fill: none; marker-end: url(#ar); }
+.fig .ln { stroke: var(--line); stroke-width: 2; }
+.fig .dots circle { fill: var(--accent); }
+.fig table { width: 100%; max-width: 640px; }
+.fig td, .fig th { padding: 0.3rem 0.7rem; }
