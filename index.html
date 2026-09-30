@@ -38,7 +38,7 @@
     <article class="week">
       <div class="when">28 jul - 3 ago<span>Semana 1</span></div>
       <div class="body">
-        <h3>Introducción a la IA y sus definiciones</h3>
+        <h3>Introducción a la IA y definiciones de la IA</h3>
         <p>No hay una sola definición de IA, y eso al inicio me confundió. Lo que todas tienen en común es que una máquina haga tareas que en una persona llamaríamos inteligentes, como aprender, razonar, entender el lenguaje o tomar decisiones. Una forma común de ordenarlas (la de Russell y Norvig) las separa en cuatro grupos, según dos preguntas: si el sistema piensa o actúa, y si lo hace como un humano o de manera racional.</p>
         <figure class="fig">
           <svg viewBox="0 0 600 180" role="img" aria-label="Cuatro enfoques para definir la IA">
@@ -49,6 +49,7 @@
           </svg>
           <figcaption>Los cuatro enfoques para definir la IA. Arriba lo humano, abajo lo racional.</figcaption>
         </figure>
+        <p>Otra cosa que entendí es que la IA no pertenece a una sola disciplina. Se alimenta de la informática, las matemáticas, la lógica, la estadística e incluso la psicología y la filosofía, porque para construir algo que razone primero hay que preguntarse qué es razonar.</p>
         <p class="ejemplo"><strong>Ejemplo:</strong> el test de Turing (1950) dice que una máquina es inteligente si una persona conversa con ella y no logra saber si habla con una máquina o con otra persona. Es la idea de "actuar como humano".</p>
         <p class="refs">En resumen, definir la IA depende de lo que uno busque: copiar a las personas o simplemente hacer lo mejor posible. Al principio me parecía que lo primero era lo obvio, pero hoy pesa más la idea de actuar de forma racional, porque lo que importa no es si la máquina piensa como nosotros sino si resuelve bien el problema.</p>
       </div>
@@ -57,7 +58,7 @@
     <article class="week">
       <div class="when">4 - 10 ago<span>Semana 2</span></div>
       <div class="body">
-        <h3>Evolución histórica y nuevo enfoque de la IA</h3>
+        <h3>Evolución histórica de la IA y nuevo enfoque de la IA</h3>
         <p>Todo empezó con Alan Turing en 1950, y en 1956 se usó por primera vez el nombre "inteligencia artificial" en una reunión en Dartmouth. Después hubo años de entusiasmo, sobre todo con los sistemas expertos de los ochenta, y también los llamados "inviernos de la IA", cuando lo prometido no se cumplió y el dinero para investigar se acabó. La cosa cambió con el aprendizaje profundo alrededor de 2012 y con la IA generativa a partir de 2022.</p>
         <figure class="fig">
           <svg viewBox="0 0 660 160" role="img" aria-label="Línea de tiempo de la IA">
@@ -108,7 +109,7 @@
     <article class="week">
       <div class="when">18 - 24 ago<span>Semana 4</span></div>
       <div class="body">
-        <h3>Lógica proposicional y enunciados simples y compuestos</h3>
+        <h3>Lógica proposicional: enunciados simples y compuestos</h3>
         <p>Una proposición es una oración de la que se puede decir si es verdadera o falsa, pero nunca las dos cosas. Las preguntas, órdenes y exclamaciones no lo son. Un enunciado simple tiene una sola idea; uno compuesto une varias con conectivos como "y", "o" o "si... entonces". Para trabajar más rápido se cambia cada enunciado simple por una letra: p, q, r.</p>
         <figure class="fig">
           <svg viewBox="0 0 600 130" role="img" aria-label="Un enunciado compuesto formado por dos simples">
@@ -121,6 +122,7 @@
           </svg>
           <figcaption>Dos enunciados simples se unen con un conectivo y forman uno compuesto.</figcaption>
         </figure>
+        <p>Esto no es solo un juego de palabras. En IA, la lógica proposicional es la forma más simple de representar conocimiento para que una computadora lo use: cada hecho se guarda como una proposición y a partir de ellas se sacan conclusiones. Por eso empezamos por aquí antes de pasar a cosas más complejas.</p><p>Un detalle práctico es distinguir cuándo una oración es simple y cuándo es compuesta. "Ana estudia y Luis trabaja" tiene dos ideas unidas por "y", así que es compuesta. "Ana estudia" es simple. Las palabras que delatan un compuesto son "y", "o", "no", "si... entonces" y "si y solo si".</p>
         <p class="ejemplo"><strong>Ejemplo:</strong> "Managua es la capital de Nicaragua" es una proposición verdadera. "¡Cierra la puerta!" no es proposición, porque no se puede decir que sea verdadera ni falsa.</p>
         <p class="refs">Un truco que me sirvió para no confundirme: cuando dudo si una oración es proposición, me pregunto si puedo decir que es cierta o que es falsa. Si puedo, lo es. Las preguntas, las órdenes y las exclamaciones no cuentan, y con eso descarto la mayoría de los casos dudosos.</p>
       </div>
@@ -146,6 +148,7 @@
           </div>
           <figcaption>En rojo, el único caso en que el condicional falla.</figcaption>
         </figure>
+        <p>Para armar la tabla de una fórmula más larga, como (p ∧ q) → r, voy por partes: primero escribo todas las combinaciones de p, q y r (son ocho filas), luego calculo p ∧ q y al final aplico el condicional con r. Ir paso a paso evita errores. Según lo que salga en la última columna, la fórmula se clasifica: si siempre es verdadera es una tautología, si siempre es falsa es una contradicción y si tiene de las dos es una contingencia.</p>
         <p class="ejemplo"><strong>Ejemplo:</strong> "Si estudio, entonces apruebo" es p → q. Si no estudié y aun así aprobé, la promesa no se rompió, por eso el resultado es verdadero. Solo se rompe si estudio y no apruebo.</p>
         <p class="refs">El condicional fue el que más me costó. Lo que me ayudó a recordarlo es que solo falla en un caso: cuando la primera parte es verdadera y la segunda es falsa. En todos los demás la promesa no se rompe, así que el resultado es verdadero. Con dos proposiciones son cuatro filas, y el número se duplica con cada variable nueva.</p>
       </div>
@@ -166,6 +169,7 @@
           </svg>
           <figcaption>Las piezas de arriba forman fórmulas como la de abajo.</figcaption>
         </figure>
+        <p>Los conectivos siguen funcionando igual que en la lógica proposicional, pero ahora unen predicados en vez de letras sueltas. Por ejemplo, Gato(x) ∧ Negro(x) dice que x es gato y además es negro. Otro detalle es que una variable queda "ligada" cuando la cubre un cuantificador; si no la cubre ninguno, la fórmula todavía no dice algo completo.</p>
         <p class="ejemplo"><strong>Ejemplo:</strong> "Todos los estudiantes estudian" es ∀x (Estudiante(x) → Estudia(x)). "Existe un estudiante que aprobó" es ∃x (Estudiante(x) ∧ Aprobó(x)). Noté que con ∀ se usa la flecha y con ∃ se usa ∧.</p>
         <p class="refs">La idea central es que los predicados hablan de propiedades y los cuantificadores dicen a cuántos objetos se aplican. Con ellos ya se pueden expresar cosas como "todos" o "algunos", que la lógica proposicional no permitía. Me sirvió recordar que ∀ va con la flecha y ∃ va con ∧.</p>
       </div>
@@ -187,6 +191,7 @@
           </svg>
           <figcaption>Al reemplazar x por Luis y y por Ana, las dos expresiones quedan iguales.</figcaption>
         </figure>
+        <p>Para que una expresión sea fbf tiene que armarse con reglas claras: un predicado con sus argumentos ya lo es, si algo es fbf su negación también lo es, y dos fbf unidas por un conectivo dentro de paréntesis forman otra fbf. Por eso (p ∧ q) → r está bien escrita y p ∧ → q no.</p><p>Sobre la inferencia, la regla que más usamos es el modus ponens: si sé que p → q y sé que p es verdadera, concluyo q. El razonamiento es encadenar varias inferencias hasta llegar a algo que no estaba escrito al inicio. La unificación entra cuando una regla tiene variables y hay que ajustarlas a los hechos concretos para poder aplicarla.</p>
         <p class="ejemplo"><strong>Ejemplo de inferencia:</strong> si sé que "si llueve, la calle se moja" y sé que llueve, concluyo que la calle se moja. Y de fbf: (p ∧ q) → r está bien escrita, pero p ∧ → q no, porque le falta una parte.</p>
         <p class="refs">Unificar significa encontrar la sustitución que deja dos expresiones exactamente iguales. Si no existe, por ejemplo porque hay dos constantes distintas en el mismo lugar, entonces no hay unificación. Escribir bien las fórmulas, con sus paréntesis, es lo que evita que una misma expresión se lea de dos maneras.</p>
       </div>
@@ -208,6 +213,7 @@
           </svg>
           <figcaption>El motor toma hechos y reglas para producir conclusiones.</figcaption>
         </figure>
+        <p>Aquí conviene separar dos ideas que al inicio yo mezclaba. La inferencia es cada paso individual, es decir, aplicar una regla a los hechos y obtener un hecho nuevo. El razonamiento es la cadena completa de esos pasos hasta llegar a la conclusión. Además, cada hecho nuevo se guarda en la base de hechos y puede activar otras reglas.</p><p>Cuando varias reglas se pueden aplicar a la vez, el motor necesita un criterio para elegir, por ejemplo la más específica o la primera de la lista. Los sistemas expertos clásicos, como MYCIN en los años setenta, funcionaban con reglas de este tipo.</p>
         <p class="ejemplo"><strong>Ejemplo:</strong> R1: SI hay fiebre Y tos ENTONCES posible gripe. R2: SI posible gripe ENTONCES recomendar reposo. Hechos: fiebre y tos. Hacia adelante: aplico R1, obtengo "posible gripe", aplico R2 y llego a "reposo". Hacia atrás: la meta es "reposo", busco R2, necesito "posible gripe", busco R1 y compruebo que tengo fiebre y tos. (Es solo un ejemplo de clase, no un diagnóstico.)</p>
         <p class="refs">En resumen, una regla de producción dice "si pasa esto, haz aquello", y el motor de inferencia decide cuál usar. Hacia adelante se parte de los hechos y se llega a la conclusión; hacia atrás se parte de la meta y se comprueba qué la respalda. Lo entendí mejor cuando lo probé paso a paso con un ejemplo pequeño.</p>
       </div>
