@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mi bitácora de IA y lógica | 28 de julio al 21 de septiembre</title>
+  <meta name="description" content="Resumen semanal de los temas de Inteligencia Artificial y lógica vistos en clase.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <h1>Lo que aprendí en estas ocho semanas</h1>
+      <p class="lead">Un repaso por semana de los temas de Inteligencia Artificial y lógica, del 28 de julio al 21 de septiembre. Todo escrito con mis palabras, tal como lo entendí.</p>
+      <nav class="jump" aria-label="Ir a una unidad">
+        <a href="#unidad-1" class="chip chip-1">Unidad I: Inteligencia Artificial</a>
+        <a href="#unidad-2" class="chip chip-2">Unidad II: Lógica y conocimiento</a>
+      </nav>
+    </div>
+    <div class="symbols" aria-hidden="true">∀ ∃ ∧ ∨ ¬ → ↔</div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- UNIDAD I -->
+  <section id="unidad-1" class="unit u1">
+    <h2>Unidad I: Introducción a la Inteligencia Artificial</h2>
+    <p class="unit-note">Semanas 1 a 3. Qué es la IA, de dónde viene y cómo funciona.</p>
+
+    <article class="week">
+      <div class="when">28 jul - 3 ago<span>Semana 1</span></div>
+      <div class="body">
+        <h3>¿Qué es la inteligencia artificial?</h3>
+        <p>Empezamos por lo básico. La IA es lograr que una máquina haga cosas que normalmente necesitan que una persona piense, como reconocer una imagen, entender un texto o elegir entre varias opciones. Lo que más me sorprendió de los videos es que esto no salió de la nada: se lleva trabajando más de cincuenta años. Hoy se nota tanto porque por fin hay muchísimos datos y computadoras lo bastante potentes para aprovecharlos.</p>
+        <p class="refs">Material: PDF de la Unidad I, "La IA lo cambia TODO" y "¿Qué es la IA y cómo funciona?"</p>
+      </div>
+    </article>
+
+    <article class="week">
+      <div class="when">4 - 10 ago<span>Semana 2</span></div>
+      <div class="body">
+        <h3>Historia de la IA y agentes inteligentes</h3>
+        <p>Aquí repasamos cómo llegó hasta hoy. El nombre nació en los años cincuenta y desde entonces hubo épocas de mucho entusiasmo y otras en las que casi nadie confiaba en ella. Después vino el aprendizaje automático y con él el salto grande. La segunda parte fue sobre la IA agéntica: ya no solo contesta preguntas, sino que se pone un objetivo, usa herramientas y va resolviendo varios pasos por su cuenta.</p>
+        <p class="refs">Material: PDF de la Unidad I, "La historia completa de la IA" y "IA agéntica en 2025"</p>
+      </div>
+    </article>
+
+    <article class="week">
+      <div class="when">11 - 17 ago<span>Semana 3</span></div>
+      <div class="body">
+        <h3>Cómo funciona por dentro y dónde estamos hoy</h3>
+        <p>Esta semana entendí que un sistema de IA aprende de ejemplos. Se le muestran muchos datos, encuentra patrones y con eso hace predicciones. Primero se entrena, luego se ajusta y al final se usa. Sobre el estado actual, los modelos de lenguaje y la IA generativa ya están en el estudio, el trabajo y la programación. Aun así se equivocan, y todavía se discute mucho sobre sesgos y ética.</p>
+        <p class="refs">Material: PDF de la Unidad I, "Funcionamiento de la inteligencia artificial" y "El estado del arte de AI en 2025"</p>
+      </div>
+    </article>
+  </section>
+
+  <!-- UNIDAD II -->
+  <section id="unidad-2" class="unit u2">
+    <h2>Unidad II: Lógica y representación del conocimiento</h2>
+    <p class="unit-note">Semanas 4 a 8. De la lógica proposicional a las reglas de producción.</p>
+
+    <article class="week">
+      <div class="when">18 - 24 ago<span>Semana 4</span></div>
+      <div class="body">
+        <h3>Lógica proposicional y enunciados</h3>
+        <p>Una proposición es una oración de la que se puede decir si es verdadera o falsa, pero no las dos cosas. "Managua es la capital de Nicaragua" cuenta; "¿qué hora es?" no. Los enunciados simples llevan una sola idea, y los compuestos unen varias con palabras como "y", "o" o "si... entonces". Para no escribir tanto se usan letras: p, q, r.</p>
+        <p class="refs">Material: PDF "Lógica proposicional y enunciados simples y compuestos"</p>
+      </div>
+    </article>
+
+    <article class="week">
+      <div class="when">25 - 31 ago<span>Semana 5</span></div>
+      <div class="body">
+        <h3>Conectivos lógicos y tablas de verdad</h3>
+        <p>Los conectivos son los que amarran las proposiciones: negación (¬), conjunción (∧), disyunción (∨), condicional (→) y bicondicional (↔). La tabla de verdad prueba todas las combinaciones posibles de verdadero y falso para ver cuándo una fórmula se cumple. Con n proposiciones salen 2<sup>n</sup> filas. Lo que más se me pegaba al inicio era el condicional: solo es falso cuando p es verdadera y q es falsa.</p>
+        <div class="table-wrap">
+          <table>
+            <caption>Condicional p → q</caption>
+            <thead><tr><th>p</th><th>q</th><th>p → q</th></tr></thead>
+            <tbody>
+              <tr><td>V</td><td>V</td><td>V</td></tr>
+              <tr><td>V</td><td>F</td><td class="no">F</td></tr>
+              <tr><td>F</td><td>V</td><td>V</td></tr>
+              <tr><td>F</td><td>F</td><td>V</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="refs">Material: PDF "Conectivos lógicos y tablas de verdad", un video sobre el tema y el curso de lógica proposicional</p>
+      </div>
+    </article>
+
+    <article class="week">
+      <div class="when">1 - 7 sep<span>Semana 6</span></div>
+      <div class="body">
+        <h3>Lógica de predicados y cuantificadores</h3>
+        <p>La lógica proposicional se queda corta cuando queremos hablar de "todos" o de "algunos". Por eso entran los predicados, que describen propiedades de los objetos, por ejemplo Estudiante(x). Los cuantificadores dicen a cuántos aplica: ∀ es "para todo" y ∃ es "existe al menos uno". Así podemos escribir ∀x (Estudiante(x) → Estudia(x)) y una computadora puede usar ese conocimiento. También vimos por primera vez la unificación, que consiste en hacer iguales dos expresiones cambiando sus variables.</p>
+        <p class="refs">Material: PDF sobre representación del conocimiento, "Lógica de predicados - Introducción", "Cuantificadores en lógica de predicados" y "Unificación en programación lógica"</p>
+      </div>
+    </article>
+
+    <article class="week">
+      <div class="when">8 - 14 sep<span>Semana 7</span></div>
+      <div class="body">
+        <h3>Fórmulas bien formadas, inferencia y algoritmo de unificación</h3>
+        <p>Una fórmula bien formada (fbf) es una expresión escrita siguiendo las reglas del lenguaje lógico. Los paréntesis y demás signos de puntuación sirven para que nadie la lea de dos maneras distintas. La inferencia es sacar conclusiones nuevas a partir de lo que ya sabemos. Y el algoritmo de unificación compara dos expresiones y busca una sustitución que las deje idénticas. Si hay un choque, como dos constantes diferentes, falla.</p>
+        <p class="ejemplo"><strong>Ejemplo:</strong> Quiere(x, Ana) y Quiere(Luis, y) se unifican con la sustitución {x/Luis, y/Ana}.</p>
+        <p class="refs">Material: PDF sobre fbf, unificación, inferencia y razonamiento, y el video "Algoritmo de unificación"</p>
+      </div>
+    </article>
+
+    <article class="week">
+      <div class="when">15 - 21 sep<span>Semana 8</span></div>
+      <div class="body">
+        <h3>Representación mediante reglas de producción</h3>
+        <p>Las reglas de producción guardan el conocimiento con la forma SI condición ENTONCES acción. Un sistema de este tipo tiene tres partes: los hechos que ya conocemos, el conjunto de reglas y un motor de inferencia que decide cuál regla aplicar. Un ejemplo sencillo sería SI llueve ENTONCES llevar paraguas. Se puede razonar partiendo de los hechos hacia la conclusión, o al revés, partiendo de lo que queremos comprobar.</p>
+        <p class="refs">Material: PDF "Representación mediante reglas de producción"</p>
+      </div>
+    </article>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <p>Hecho por [Tu nombre] para la clase de [Nombre de la asignatura], UNHSJM, 2026.</p>
+  </div>
+</footer>
+
+</body>
+</html>
