@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#55627a"/></marker></defs></svg>
 
 <header class="hero">
   <div class="wrap hero-grid">
@@ -28,40 +29,76 @@
 
 <main class="wrap">
 
-  <!-- UNIDAD I -->
   <section id="unidad-1" class="unit u1">
     <h2>Unidad I: Introducción a la Inteligencia Artificial</h2>
-    <p class="unit-note">Semanas 1 a 3. Qué es la IA, de dónde viene y cómo funciona.</p>
+    <p class="unit-note">Semanas 1 a 3. Qué es la IA, de dónde viene y para qué sirve.</p>
 
     <article class="week">
       <div class="when">28 jul - 3 ago<span>Semana 1</span></div>
       <div class="body">
-        <h3>¿Qué es la inteligencia artificial?</h3>
-        <p>Empezamos por lo básico. La IA es lograr que una máquina haga cosas que normalmente necesitan que una persona piense, como reconocer una imagen, entender un texto o elegir entre varias opciones. Lo que más me sorprendió de los videos es que esto no salió de la nada: se lleva trabajando más de cincuenta años. Hoy se nota tanto porque por fin hay muchísimos datos y computadoras lo bastante potentes para aprovecharlos.</p>
-        <p class="refs">Para recordar: la IA no es algo nuevo, lleva décadas de trabajo detrás. Lo que cambió es que hoy hay muchísimos datos y computadoras lo bastante rápidas para sacarle provecho. Por eso parece que apareció de golpe, cuando en realidad fue un proceso largo.</p>
+        <h3>Introducción a la IA y sus definiciones</h3>
+        <p>No hay una sola definición de IA, y eso al inicio me confundió. Lo que todas tienen en común es que una máquina haga tareas que en una persona llamaríamos inteligentes, como aprender, razonar, entender el lenguaje o tomar decisiones. Una forma común de ordenarlas (la de Russell y Norvig) las separa en cuatro grupos, según dos preguntas: si el sistema piensa o actúa, y si lo hace como un humano o de manera racional.</p>
+        <figure class="fig">
+          <svg viewBox="0 0 600 180" role="img" aria-label="Cuatro enfoques para definir la IA">
+            <rect class="b" x="5" y="5" width="285" height="75" rx="6"/><text class="t" x="147" y="37">Piensa como un humano</text><text class="s" x="147" y="60">intenta copiar cómo funciona la mente</text>
+            <rect class="b" x="310" y="5" width="285" height="75" rx="6"/><text class="t" x="452" y="37">Actúa como un humano</text><text class="s" x="452" y="60">se comporta igual que una persona</text>
+            <rect class="b2" x="5" y="95" width="285" height="75" rx="6"/><text class="t" x="147" y="127">Piensa racionalmente</text><text class="s" x="147" y="150">sigue las leyes del razonamiento lógico</text>
+            <rect class="b2" x="310" y="95" width="285" height="75" rx="6"/><text class="t" x="452" y="127">Actúa racionalmente</text><text class="s" x="452" y="150">busca siempre el mejor resultado posible</text>
+          </svg>
+          <figcaption>Los cuatro enfoques para definir la IA. Arriba lo humano, abajo lo racional.</figcaption>
+        </figure>
+        <p class="ejemplo"><strong>Ejemplo:</strong> el test de Turing (1950) dice que una máquina es inteligente si una persona conversa con ella y no logra saber si habla con una máquina o con otra persona. Es la idea de "actuar como humano".</p>
+        <p class="refs">Para recordar: definir la IA depende de si se busca imitar a las personas o simplemente actuar de la mejor forma posible. Hoy pesa más la segunda idea.</p>
       </div>
     </article>
 
     <article class="week">
       <div class="when">4 - 10 ago<span>Semana 2</span></div>
       <div class="body">
-        <h3>Historia de la IA y agentes inteligentes</h3>
-        <p>Aquí repasamos cómo llegó hasta hoy. El nombre nació en los años cincuenta y desde entonces hubo épocas de mucho entusiasmo y otras en las que casi nadie confiaba en ella. Después vino el aprendizaje automático y con él el salto grande. La segunda parte fue sobre la IA agéntica: ya no solo contesta preguntas, sino que se pone un objetivo, usa herramientas y va resolviendo varios pasos por su cuenta.</p>
-        <p class="refs">Para recordar: la IA avanzó por etapas, con años de mucha ilusión y otros de poco avance. Los agentes son el paso más reciente, porque ya no se limitan a contestar una pregunta. Reciben una meta, deciden qué pasos seguir y usan herramientas para cumplirla.</p>
+        <h3>Evolución histórica y nuevo enfoque de la IA</h3>
+        <p>Todo empezó con Alan Turing en 1950, y en 1956 se usó por primera vez el nombre "inteligencia artificial" en una reunión en Dartmouth. Después hubo años de entusiasmo, sobre todo con los sistemas expertos de los ochenta, y también los llamados "inviernos de la IA", cuando lo prometido no se cumplió y el dinero para investigar se acabó. La cosa cambió con el aprendizaje profundo alrededor de 2012 y con la IA generativa a partir de 2022.</p>
+        <figure class="fig">
+          <svg viewBox="0 0 660 160" role="img" aria-label="Línea de tiempo de la IA">
+            <line class="ln" x1="20" y1="80" x2="640" y2="80"/>
+            <g class="dots"><circle cx="60" cy="80" r="6"/><circle cx="168" cy="80" r="6"/><circle cx="276" cy="80" r="6"/><circle cx="384" cy="80" r="6"/><circle cx="492" cy="80" r="6"/><circle cx="600" cy="80" r="6"/></g>
+            <text class="t" x="60" y="60">1950</text><text class="s" x="60" y="105">Test de</text><text class="s" x="60" y="122">Turing</text>
+            <text class="t" x="168" y="60">1956</text><text class="s" x="168" y="105">Conferencia de</text><text class="s" x="168" y="122">Dartmouth</text>
+            <text class="t" x="276" y="60">1980</text><text class="s" x="276" y="105">Sistemas</text><text class="s" x="276" y="122">expertos</text>
+            <text class="t" x="384" y="60">1997</text><text class="s" x="384" y="105">Deep Blue le gana</text><text class="s" x="384" y="122">a Kaspárov</text>
+            <text class="t" x="492" y="60">2012</text><text class="s" x="492" y="105">Aprendizaje</text><text class="s" x="492" y="122">profundo</text>
+            <text class="t" x="600" y="60">2022</text><text class="s" x="600" y="105">IA</text><text class="s" x="600" y="122">generativa</text>
+          </svg>
+          <figcaption>Algunos hitos que ayudan a ubicar cada época.</figcaption>
+        </figure>
+        <p>El nuevo enfoque es dejar de escribir a mano todas las reglas y hacer que el sistema aprenda de los datos. Además, en vez de copiar al humano, se habla de agentes racionales: sistemas que perciben su entorno y eligen la acción con mejor resultado.</p>
+        <p class="ejemplo"><strong>Ejemplo:</strong> un filtro de spam. Antes alguien escribía reglas como "si el correo dice premio, es spam". Ahora el sistema revisa miles de correos ya marcados y descubre solo qué los distingue.</p>
+        <p class="refs">Para recordar: la IA pasó de programarse con reglas escritas a mano a aprender de ejemplos, y eso fue lo que la hizo despegar.</p>
       </div>
     </article>
 
     <article class="week">
       <div class="when">11 - 17 ago<span>Semana 3</span></div>
       <div class="body">
-        <h3>Cómo funciona por dentro y dónde estamos hoy</h3>
-        <p>Esta semana entendí que un sistema de IA aprende de ejemplos. Se le muestran muchos datos, encuentra patrones y con eso hace predicciones. Primero se entrena, luego se ajusta y al final se usa. Sobre el estado actual, los modelos de lenguaje y la IA generativa ya están en el estudio, el trabajo y la programación. Aun así se equivocan, y todavía se discute mucho sobre sesgos y ética.</p>
-        <p class="refs">Para recordar: una IA aprende a partir de ejemplos, no porque alguien le escriba cada respuesta. Detecta patrones en los datos y con eso predice o genera resultados nuevos. Aunque impresiona, puede equivocarse o repetir sesgos, así que siempre conviene revisar lo que responde antes de confiar en ello.</p>
+        <h3>Áreas de estudio, aplicaciones e importancia de la IA</h3>
+        <p>La IA no es una sola cosa, sino varias áreas que trabajan distinto. El aprendizaje automático estudia cómo aprender de datos, la visión por computadora cómo interpretar imágenes, el procesamiento del lenguaje natural cómo entender textos y voz, y la robótica cómo mover máquinas en el mundo real. También están los sistemas expertos, que guardan el conocimiento de un especialista.</p>
+        <figure class="fig">
+          <svg viewBox="0 0 600 170" role="img" aria-label="Áreas principales de la IA">
+            <line class="ln" x1="300" y1="85" x2="105" y2="29"/><line class="ln" x1="300" y1="85" x2="495" y2="29"/><line class="ln" x1="300" y1="85" x2="105" y2="141"/><line class="ln" x1="300" y1="85" x2="495" y2="141"/>
+            <rect class="b" x="245" y="65" width="110" height="40" rx="20"/><text class="t" x="300" y="90">IA</text>
+            <rect class="b2" x="15" y="10" width="180" height="38" rx="6"/><text class="t" x="105" y="34">Aprendizaje automático</text>
+            <rect class="b2" x="405" y="10" width="180" height="38" rx="6"/><text class="t" x="495" y="34">Visión por computadora</text>
+            <rect class="b2" x="15" y="122" width="180" height="38" rx="6"/><text class="t" x="105" y="146">Lenguaje natural</text>
+            <rect class="b2" x="405" y="122" width="180" height="38" rx="6"/><text class="t" x="495" y="146">Robótica</text>
+          </svg>
+          <figcaption>Cuatro de las áreas más conocidas que salen de la IA.</figcaption>
+        </figure>
+        <p>Su importancia está en que automatiza tareas repetitivas, ayuda a decidir cuando hay demasiada información y abre posibilidades en salud, educación, transporte y comercio. También trae riesgos que no hay que olvidar: pérdida de empleos, sesgos en los resultados y manejo de datos personales.</p>
+        <p class="ejemplo"><strong>Ejemplo:</strong> en medicina, un sistema de visión revisa radiografías y marca zonas sospechosas. El médico sigue siendo quien decide, pero ahorra tiempo y revisa mejor.</p>
+        <p class="refs">Para recordar: la IA sirve en muchos campos a la vez, pero sus resultados siempre necesitan supervisión humana.</p>
       </div>
     </article>
   </section>
 
-  <!-- UNIDAD II -->
   <section id="unidad-2" class="unit u2">
     <h2>Unidad II: Lógica y representación del conocimiento</h2>
     <p class="unit-note">Semanas 4 a 8. De la lógica proposicional a las reglas de producción.</p>
@@ -69,9 +106,21 @@
     <article class="week">
       <div class="when">18 - 24 ago<span>Semana 4</span></div>
       <div class="body">
-        <h3>Lógica proposicional y enunciados</h3>
-        <p>Una proposición es una oración de la que se puede decir si es verdadera o falsa, pero no las dos cosas. "Managua es la capital de Nicaragua" cuenta; "¿qué hora es?" no. Los enunciados simples llevan una sola idea, y los compuestos unen varias con palabras como "y", "o" o "si... entonces". Para no escribir tanto se usan letras: p, q, r.</p>
-        <p class="refs">Para recordar: una proposición es una oración que puede ser verdadera o falsa, pero nunca las dos a la vez. Las preguntas, las órdenes y las exclamaciones no cuentan. Si tengo duda, me pregunto si puedo decir "eso es cierto" o "eso es falso" sobre la oración.</p>
+        <h3>Lógica proposicional y enunciados simples y compuestos</h3>
+        <p>Una proposición es una oración de la que se puede decir si es verdadera o falsa, pero nunca las dos cosas. Las preguntas, órdenes y exclamaciones no lo son. Un enunciado simple tiene una sola idea; uno compuesto une varias con conectivos como "y", "o" o "si... entonces". Para trabajar más rápido se cambia cada enunciado simple por una letra: p, q, r.</p>
+        <figure class="fig">
+          <svg viewBox="0 0 600 130" role="img" aria-label="Un enunciado compuesto formado por dos simples">
+            <rect class="b2" x="10" y="10" width="210" height="42" rx="6"/><text class="t" x="115" y="36">p: Está lloviendo</text>
+            <rect class="b2" x="10" y="78" width="210" height="42" rx="6"/><text class="t" x="115" y="104">q: Hace frío</text>
+            <line class="l" x1="220" y1="31" x2="300" y2="58"/><line class="l" x1="220" y1="99" x2="300" y2="72"/>
+            <rect class="b" x="300" y="45" width="90" height="40" rx="6"/><text class="t" x="345" y="70">∧ (y)</text>
+            <line class="l" x1="390" y1="65" x2="440" y2="65"/>
+            <rect class="b" x="440" y="35" width="150" height="60" rx="6"/><text class="t" x="515" y="60">p ∧ q</text><text class="s" x="515" y="80">enunciado compuesto</text>
+          </svg>
+          <figcaption>Dos enunciados simples se unen con un conectivo y forman uno compuesto.</figcaption>
+        </figure>
+        <p class="ejemplo"><strong>Ejemplo:</strong> "Managua es la capital de Nicaragua" es una proposición verdadera. "¡Cierra la puerta!" no es proposición, porque no se puede decir que sea verdadera ni falsa.</p>
+        <p class="refs">Para recordar: si puedo decir "eso es cierto" o "eso es falso" sobre una oración, entonces es una proposición.</p>
       </div>
     </article>
 
@@ -79,48 +128,86 @@
       <div class="when">25 - 31 ago<span>Semana 5</span></div>
       <div class="body">
         <h3>Conectivos lógicos y tablas de verdad</h3>
-        <p>Los conectivos son los que amarran las proposiciones: negación (¬), conjunción (∧), disyunción (∨), condicional (→) y bicondicional (↔). La tabla de verdad prueba todas las combinaciones posibles de verdadero y falso para ver cuándo una fórmula se cumple. Con n proposiciones salen 2<sup>n</sup> filas. Lo que más se me pegaba al inicio era el condicional: solo es falso cuando p es verdadera y q es falsa.</p>
-        <div class="table-wrap">
-          <table>
-            <caption>Condicional p → q</caption>
-            <thead><tr><th>p</th><th>q</th><th>p → q</th></tr></thead>
-            <tbody>
-              <tr><td>V</td><td>V</td><td>V</td></tr>
-              <tr><td>V</td><td>F</td><td class="no">F</td></tr>
-              <tr><td>F</td><td>V</td><td>V</td></tr>
-              <tr><td>F</td><td>F</td><td>V</td></tr>
-            </tbody>
-          </table>
-        </div>
-        <p class="refs">Para recordar: la tabla de verdad revisa todos los casos posibles de verdadero y falso, y con n proposiciones salen 2ⁿ filas. Cada conectivo tiene su propia regla. Lo más fácil de olvidar es que el condicional solo falla cuando la primera parte es verdadera y la segunda es falsa.</p>
+        <p>Los conectivos son los que amarran las proposiciones. La negación (¬) invierte el valor. La conjunción (∧) solo es verdadera si las dos partes lo son. La disyunción (∨) solo es falsa si las dos son falsas. El condicional (→) solo es falso cuando p es verdadera y q es falsa. El bicondicional (↔) es verdadero cuando las dos partes valen lo mismo. Con n proposiciones, la tabla de verdad tiene 2<sup>n</sup> filas.</p>
+        <figure class="fig">
+          <div class="table-wrap">
+            <table>
+              <caption>Tabla de verdad de los cinco conectivos</caption>
+              <thead><tr><th>p</th><th>q</th><th>¬p</th><th>p ∧ q</th><th>p ∨ q</th><th>p → q</th><th>p ↔ q</th></tr></thead>
+              <tbody>
+                <tr><td>V</td><td>V</td><td>F</td><td>V</td><td>V</td><td>V</td><td>V</td></tr>
+                <tr><td>V</td><td>F</td><td>F</td><td>F</td><td>V</td><td class="no">F</td><td>F</td></tr>
+                <tr><td>F</td><td>V</td><td>V</td><td>F</td><td>V</td><td>V</td><td>F</td></tr>
+                <tr><td>F</td><td>F</td><td>V</td><td>F</td><td>F</td><td>V</td><td>V</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <figcaption>En rojo, el único caso en que el condicional falla.</figcaption>
+        </figure>
+        <p class="ejemplo"><strong>Ejemplo:</strong> "Si estudio, entonces apruebo" es p → q. Si no estudié y aun así aprobé, la promesa no se rompió, por eso el resultado es verdadero. Solo se rompe si estudio y no apruebo.</p>
+        <p class="refs">Para recordar: el condicional es el que más confunde. Falla en un único caso: primera parte verdadera y segunda falsa.</p>
       </div>
     </article>
 
     <article class="week">
       <div class="when">1 - 7 sep<span>Semana 6</span></div>
       <div class="body">
-        <h3>Lógica de predicados y cuantificadores</h3>
-        <p>La lógica proposicional se queda corta cuando queremos hablar de "todos" o de "algunos". Por eso entran los predicados, que describen propiedades de los objetos, por ejemplo Estudiante(x). Los cuantificadores dicen a cuántos aplica: ∀ es "para todo" y ∃ es "existe al menos uno". Así podemos escribir ∀x (Estudiante(x) → Estudia(x)) y una computadora puede usar ese conocimiento. También vimos por primera vez la unificación, que consiste en hacer iguales dos expresiones cambiando sus variables.</p>
-        <p class="refs">Para recordar: los cuantificadores ∀ y ∃ permiten hablar de "todos" y de "algunos", algo que la lógica proposicional no puede hacer. Los predicados describen propiedades de los objetos, y juntos sirven para guardar conocimiento en un formato que una computadora sí puede procesar.</p>
+        <h3>Lógica de predicados: variables, constantes, conectivos y cuantificadores</h3>
+        <p>La lógica proposicional no alcanza para decir "todos" o "algunos". Por eso se usan predicados, que describen propiedades de objetos, como Estudiante(x). Las constantes son objetos concretos (Ana, 5), las variables representan cualquier objeto (x, y), los conectivos son los mismos de antes y los cuantificadores dicen cuántos objetos cumplen algo: ∀ es "para todo" y ∃ es "existe al menos uno".</p>
+        <figure class="fig">
+          <svg viewBox="0 0 600 125" role="img" aria-label="Piezas de la lógica de predicados">
+            <rect class="b" x="10" y="8" width="135" height="58" rx="6"/><text class="t" x="77" y="34">∀   ∃</text><text class="s" x="77" y="54">cuantificadores</text>
+            <rect class="b" x="160" y="8" width="135" height="58" rx="6"/><text class="t" x="227" y="34">x, y</text><text class="s" x="227" y="54">variables</text>
+            <rect class="b" x="310" y="8" width="135" height="58" rx="6"/><text class="t" x="377" y="34">Estudiante(x)</text><text class="s" x="377" y="54">predicado</text>
+            <rect class="b" x="460" y="8" width="130" height="58" rx="6"/><text class="t" x="525" y="34">Ana, 5</text><text class="s" x="525" y="54">constantes</text>
+            <text class="t" x="300" y="105">∀x ( Estudiante(x) → Estudia(x) )</text>
+          </svg>
+          <figcaption>Las piezas de arriba forman fórmulas como la de abajo.</figcaption>
+        </figure>
+        <p class="ejemplo"><strong>Ejemplo:</strong> "Todos los estudiantes estudian" es ∀x (Estudiante(x) → Estudia(x)). "Existe un estudiante que aprobó" es ∃x (Estudiante(x) ∧ Aprobó(x)). Noté que con ∀ se usa la flecha y con ∃ se usa ∧.</p>
+        <p class="refs">Para recordar: los predicados hablan de propiedades y los cuantificadores dicen a cuántos objetos aplican.</p>
       </div>
     </article>
 
     <article class="week">
       <div class="when">8 - 14 sep<span>Semana 7</span></div>
       <div class="body">
-        <h3>Fórmulas bien formadas, inferencia y algoritmo de unificación</h3>
-        <p>Una fórmula bien formada (fbf) es una expresión escrita siguiendo las reglas del lenguaje lógico. Los paréntesis y demás signos de puntuación sirven para que nadie la lea de dos maneras distintas. La inferencia es sacar conclusiones nuevas a partir de lo que ya sabemos. Y el algoritmo de unificación compara dos expresiones y busca una sustitución que las deje idénticas. Si hay un choque, como dos constantes diferentes, falla.</p>
-        <p class="ejemplo"><strong>Ejemplo:</strong> Quiere(x, Ana) y Quiere(Luis, y) se unifican con la sustitución {x/Luis, y/Ana}.</p>
-        <p class="refs">Para recordar: unificar es encontrar la sustitución que deja dos expresiones exactamente iguales. Si aparece un conflicto, como dos constantes distintas en la misma posición, el algoritmo falla y no hay unificación. Además, una fbf bien escrita evita que la misma fórmula se pueda leer de dos maneras.</p>
+        <h3>Signos de puntuación, fbf, unificación, inferencia y razonamiento</h3>
+        <p>Una fórmula bien formada (fbf) es una expresión escrita siguiendo las reglas del lenguaje lógico. Los paréntesis y demás signos de puntuación evitan que se lea de dos maneras. La unificación busca una sustitución que haga idénticas dos expresiones, y falla si hay un choque, como dos constantes distintas. La inferencia saca conclusiones nuevas de lo que ya se sabe, y el razonamiento es el proceso completo de encadenar esas inferencias.</p>
+        <figure class="fig">
+          <svg viewBox="0 0 600 150" role="img" aria-label="Ejemplo de unificación">
+            <rect class="b2" x="10" y="10" width="200" height="38" rx="6"/><text class="t" x="110" y="34">Quiere(x, Ana)</text>
+            <rect class="b2" x="10" y="100" width="200" height="38" rx="6"/><text class="t" x="110" y="124">Quiere(Luis, y)</text>
+            <line class="l" x1="210" y1="29" x2="255" y2="60"/><line class="l" x1="210" y1="119" x2="255" y2="88"/>
+            <rect class="b" x="255" y="50" width="135" height="48" rx="6"/><text class="t" x="322" y="72">{x/Luis, y/Ana}</text><text class="s" x="322" y="90">sustitución</text>
+            <line class="l" x1="390" y1="74" x2="425" y2="74"/>
+            <rect class="b" x="425" y="50" width="165" height="48" rx="6"/><text class="t" x="507" y="72">Quiere(Luis, Ana)</text><text class="s" x="507" y="90">expresión unificada</text>
+          </svg>
+          <figcaption>Al reemplazar x por Luis y y por Ana, las dos expresiones quedan iguales.</figcaption>
+        </figure>
+        <p class="ejemplo"><strong>Ejemplo de inferencia:</strong> si sé que "si llueve, la calle se moja" y sé que llueve, concluyo que la calle se moja. Y de fbf: (p ∧ q) → r está bien escrita, pero p ∧ → q no, porque le falta una parte.</p>
+        <p class="refs">Para recordar: unificar es encontrar la sustitución que iguala dos expresiones, y si no existe, no hay unificación.</p>
       </div>
     </article>
 
     <article class="week">
       <div class="when">15 - 21 sep<span>Semana 8</span></div>
       <div class="body">
-        <h3>Representación mediante reglas de producción</h3>
-        <p>Las reglas de producción guardan el conocimiento con la forma SI condición ENTONCES acción. Un sistema de este tipo tiene tres partes: los hechos que ya conocemos, el conjunto de reglas y un motor de inferencia que decide cuál regla aplicar. Un ejemplo sencillo sería SI llueve ENTONCES llevar paraguas. Se puede razonar partiendo de los hechos hacia la conclusión, o al revés, partiendo de lo que queremos comprobar.</p>
-        <p class="refs">Para recordar: una regla de producción dice "si pasa esto, entonces haz aquello". Un sistema con muchas reglas necesita además un motor de inferencia, que es quien decide cuál regla aplicar según los hechos que ya se conocen. Así el conocimiento queda separado de la forma de usarlo.</p>
+        <h3>Reglas de producción: inferencia, razonamiento, hechos y encadenamiento</h3>
+        <p>Una regla de producción tiene la forma SI condición ENTONCES acción. Un sistema con reglas necesita tres cosas: una base de hechos (lo que ya se sabe), una base de reglas y un motor de inferencia que decide cuál regla aplicar. Hay dos formas de razonar con ellas. En el encadenamiento hacia adelante se parte de los hechos y se avanza hasta llegar a una conclusión. En el encadenamiento hacia atrás se parte de la meta y se busca qué hace falta para comprobarla.</p>
+        <figure class="fig">
+          <svg viewBox="0 0 600 150" role="img" aria-label="Partes de un sistema de reglas de producción">
+            <rect class="b2" x="10" y="10" width="150" height="44" rx="6"/><text class="t" x="85" y="37">Base de hechos</text>
+            <rect class="b2" x="10" y="96" width="150" height="44" rx="6"/><text class="t" x="85" y="123">Base de reglas</text>
+            <line class="l" x1="160" y1="32" x2="225" y2="62"/><line class="l" x1="160" y1="118" x2="225" y2="88"/>
+            <rect class="b" x="225" y="50" width="150" height="50" rx="6"/><text class="t" x="300" y="80">Motor de inferencia</text>
+            <line class="l" x1="375" y1="75" x2="440" y2="75"/>
+            <rect class="b" x="440" y="50" width="150" height="50" rx="6"/><text class="t" x="515" y="72">Hechos nuevos</text><text class="s" x="515" y="90">conclusiones</text>
+          </svg>
+          <figcaption>El motor toma hechos y reglas para producir conclusiones.</figcaption>
+        </figure>
+        <p class="ejemplo"><strong>Ejemplo:</strong> R1: SI hay fiebre Y tos ENTONCES posible gripe. R2: SI posible gripe ENTONCES recomendar reposo. Hechos: fiebre y tos. Hacia adelante: aplico R1, obtengo "posible gripe", aplico R2 y llego a "reposo". Hacia atrás: la meta es "reposo", busco R2, necesito "posible gripe", busco R1 y compruebo que tengo fiebre y tos. (Es solo un ejemplo de clase, no un diagnóstico.)</p>
+        <p class="refs">Para recordar: hacia adelante se va de los hechos a la conclusión, y hacia atrás se va de la meta a los hechos que la respaldan.</p>
       </div>
     </article>
   </section>
