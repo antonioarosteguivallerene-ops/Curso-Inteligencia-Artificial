@@ -1,21 +1,19 @@
 :root {
-  --bg: #f3f6fb;
+  --bg: #f4f5f7;
   --surface: #ffffff;
-  --panel: #f7f9fd;
-  --navy: #1f3a78;
-  --cyan: #18b8e8;
-  --magenta: #e01880;
-  --yellow: #f0c800;
-  --ink: #14213f;
-  --muted: #55627a;
-  --line: #d3dbe8;
-  --u1: #0b7ea8;
-  --u1-soft: #e1f4fb;
-  --u2: #c4126f;
-  --u2-soft: #fbe6f1;
+  --panel: #f7f8fa;
+  --navy: #14233f;
+  --gold: #b08d3c;
+  --ink: #1a2333;
+  --muted: #58627a;
+  --line: #d7dbe3;
+  --u1: #1f4e79;
+  --u1-soft: #e6eef6;
+  --u2: #6b2d3c;
+  --u2-soft: #f3e7ea;
   --head: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
   --text: "Source Serif 4", Georgia, "Times New Roman", serif;
-  --shadow: 0 1px 2px rgba(14, 26, 47, 0.06), 0 8px 22px rgba(14, 26, 47, 0.06);
+  --shadow: 0 1px 2px rgba(20, 35, 63, 0.06), 0 8px 22px rgba(20, 35, 63, 0.06);
 }
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -45,8 +43,8 @@ a:focus-visible { outline: 3px solid var(--navy); outline-offset: 3px; }
   content: "";
   position: absolute;
   left: 0; right: 0; bottom: -1px;
-  height: 6px;
-  background: linear-gradient(90deg, var(--cyan) 0 33.4%, var(--magenta) 33.4% 66.7%, var(--yellow) 66.7%);
+  height: 4px;
+  background: var(--gold);
 }
 
 .hero-grid {
@@ -235,16 +233,16 @@ caption { font-weight: 700; padding-bottom: 0.5rem; color: var(--muted); }
 th, td { border: 1px solid var(--line); padding: 0.4rem 0.8rem; }
 th { background: var(--accent); color: #fff; font-weight: 700; }
 tbody tr:nth-child(even) td { background: var(--panel); }
-td.no { background: #fde4e1 !important; font-weight: 700; color: #a3261b; }
+td.no { background: #f5dfdf !important; font-weight: 700; color: #8f2d2d; }
 
 /* Pie */
 .foot {
   margin-top: 3rem;
   padding: 2.2rem 0;
   background: var(--navy);
-  color: #b9c5da;
+  color: #c3cad8;
   font-size: 0.95rem;
-  border-top: 5px solid var(--yellow);
+  border-top: 4px solid var(--gold);
 }
 .foot p { margin: 0; }
 
