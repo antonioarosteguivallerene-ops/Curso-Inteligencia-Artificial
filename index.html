@@ -2,6 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
+  <meta name="theme-color" content="#14233f">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Mi Resumen General de IA y lógica | 28 de julio al 21 de septiembre</title>
   <meta name="description" content="Resumen semanal de los temas de Inteligencia Artificial y lógica vistos en clase.">
@@ -49,7 +50,7 @@
           <figcaption>Los cuatro enfoques para definir la IA. Arriba lo humano, abajo lo racional.</figcaption>
         </figure>
         <p class="ejemplo"><strong>Ejemplo:</strong> el test de Turing (1950) dice que una máquina es inteligente si una persona conversa con ella y no logra saber si habla con una máquina o con otra persona. Es la idea de "actuar como humano".</p>
-        <p class="refs">Para recordar: definir la IA depende de si se busca imitar a las personas o simplemente actuar de la mejor forma posible. Hoy pesa más la segunda idea.</p>
+        <p class="refs">En resumen, definir la IA depende de lo que uno busque: copiar a las personas o simplemente hacer lo mejor posible. Al principio me parecía que lo primero era lo obvio, pero hoy pesa más la idea de actuar de forma racional, porque lo que importa no es si la máquina piensa como nosotros sino si resuelve bien el problema.</p>
       </div>
     </article>
 
@@ -73,7 +74,7 @@
         </figure>
         <p>El nuevo enfoque es dejar de escribir a mano todas las reglas y hacer que el sistema aprenda de los datos. Además, en vez de copiar al humano, se habla de agentes racionales: sistemas que perciben su entorno y eligen la acción con mejor resultado.</p>
         <p class="ejemplo"><strong>Ejemplo:</strong> un filtro de spam. Antes alguien escribía reglas como "si el correo dice premio, es spam". Ahora el sistema revisa miles de correos ya marcados y descubre solo qué los distingue.</p>
-        <p class="refs">Para recordar: la IA pasó de programarse con reglas escritas a mano a aprender de ejemplos, y eso fue lo que la hizo despegar.</p>
+        <p class="refs">Lo que me quedó de esta semana es que la IA no avanzó en línea recta: tuvo épocas de mucha ilusión y otras de desencanto. El gran cambio fue dejar de escribir cada regla a mano y dejar que los sistemas aprendan de ejemplos, y eso fue lo que la hizo despegar.</p>
       </div>
     </article>
 
@@ -95,7 +96,7 @@
         </figure>
         <p>Su importancia está en que automatiza tareas repetitivas, ayuda a decidir cuando hay demasiada información y abre posibilidades en salud, educación, transporte y comercio. También trae riesgos que no hay que olvidar: pérdida de empleos, sesgos en los resultados y manejo de datos personales.</p>
         <p class="ejemplo"><strong>Ejemplo:</strong> en medicina, un sistema de visión revisa radiografías y marca zonas sospechosas. El médico sigue siendo quien decide, pero ahorra tiempo y revisa mejor.</p>
-        <p class="refs">Para recordar: la IA sirve en muchos campos a la vez, pero sus resultados siempre necesitan supervisión humana.</p>
+        <p class="refs">La IA se mete en muchos campos a la vez, desde la salud hasta el comercio, y eso la vuelve muy útil. Aun así, sus resultados no se deben aceptar a ciegas, porque puede equivocarse o repetir sesgos. Siempre tiene que haber una persona que revise y decida.</p>
       </div>
     </article>
   </section>
@@ -121,7 +122,7 @@
           <figcaption>Dos enunciados simples se unen con un conectivo y forman uno compuesto.</figcaption>
         </figure>
         <p class="ejemplo"><strong>Ejemplo:</strong> "Managua es la capital de Nicaragua" es una proposición verdadera. "¡Cierra la puerta!" no es proposición, porque no se puede decir que sea verdadera ni falsa.</p>
-        <p class="refs">Para recordar: si puedo decir "eso es cierto" o "eso es falso" sobre una oración, entonces es una proposición.</p>
+        <p class="refs">Un truco que me sirvió para no confundirme: cuando dudo si una oración es proposición, me pregunto si puedo decir que es cierta o que es falsa. Si puedo, lo es. Las preguntas, las órdenes y las exclamaciones no cuentan, y con eso descarto la mayoría de los casos dudosos.</p>
       </div>
     </article>
 
@@ -146,7 +147,7 @@
           <figcaption>En rojo, el único caso en que el condicional falla.</figcaption>
         </figure>
         <p class="ejemplo"><strong>Ejemplo:</strong> "Si estudio, entonces apruebo" es p → q. Si no estudié y aun así aprobé, la promesa no se rompió, por eso el resultado es verdadero. Solo se rompe si estudio y no apruebo.</p>
-        <p class="refs">Para recordar: el condicional es el que más confunde. Falla en un único caso: primera parte verdadera y segunda falsa.</p>
+        <p class="refs">El condicional fue el que más me costó. Lo que me ayudó a recordarlo es que solo falla en un caso: cuando la primera parte es verdadera y la segunda es falsa. En todos los demás la promesa no se rompe, así que el resultado es verdadero. Con dos proposiciones son cuatro filas, y el número se duplica con cada variable nueva.</p>
       </div>
     </article>
 
@@ -166,7 +167,7 @@
           <figcaption>Las piezas de arriba forman fórmulas como la de abajo.</figcaption>
         </figure>
         <p class="ejemplo"><strong>Ejemplo:</strong> "Todos los estudiantes estudian" es ∀x (Estudiante(x) → Estudia(x)). "Existe un estudiante que aprobó" es ∃x (Estudiante(x) ∧ Aprobó(x)). Noté que con ∀ se usa la flecha y con ∃ se usa ∧.</p>
-        <p class="refs">Para recordar: los predicados hablan de propiedades y los cuantificadores dicen a cuántos objetos aplican.</p>
+        <p class="refs">La idea central es que los predicados hablan de propiedades y los cuantificadores dicen a cuántos objetos se aplican. Con ellos ya se pueden expresar cosas como "todos" o "algunos", que la lógica proposicional no permitía. Me sirvió recordar que ∀ va con la flecha y ∃ va con ∧.</p>
       </div>
     </article>
 
@@ -187,7 +188,7 @@
           <figcaption>Al reemplazar x por Luis y y por Ana, las dos expresiones quedan iguales.</figcaption>
         </figure>
         <p class="ejemplo"><strong>Ejemplo de inferencia:</strong> si sé que "si llueve, la calle se moja" y sé que llueve, concluyo que la calle se moja. Y de fbf: (p ∧ q) → r está bien escrita, pero p ∧ → q no, porque le falta una parte.</p>
-        <p class="refs">Para recordar: unificar es encontrar la sustitución que iguala dos expresiones, y si no existe, no hay unificación.</p>
+        <p class="refs">Unificar significa encontrar la sustitución que deja dos expresiones exactamente iguales. Si no existe, por ejemplo porque hay dos constantes distintas en el mismo lugar, entonces no hay unificación. Escribir bien las fórmulas, con sus paréntesis, es lo que evita que una misma expresión se lea de dos maneras.</p>
       </div>
     </article>
 
@@ -208,7 +209,7 @@
           <figcaption>El motor toma hechos y reglas para producir conclusiones.</figcaption>
         </figure>
         <p class="ejemplo"><strong>Ejemplo:</strong> R1: SI hay fiebre Y tos ENTONCES posible gripe. R2: SI posible gripe ENTONCES recomendar reposo. Hechos: fiebre y tos. Hacia adelante: aplico R1, obtengo "posible gripe", aplico R2 y llego a "reposo". Hacia atrás: la meta es "reposo", busco R2, necesito "posible gripe", busco R1 y compruebo que tengo fiebre y tos. (Es solo un ejemplo de clase, no un diagnóstico.)</p>
-        <p class="refs">Para recordar: hacia adelante se va de los hechos a la conclusión, y hacia atrás se va de la meta a los hechos que la respaldan.</p>
+        <p class="refs">En resumen, una regla de producción dice "si pasa esto, haz aquello", y el motor de inferencia decide cuál usar. Hacia adelante se parte de los hechos y se llega a la conclusión; hacia atrás se parte de la meta y se comprueba qué la respalda. Lo entendí mejor cuando lo probé paso a paso con un ejemplo pequeño.</p>
       </div>
     </article>
   </section>
